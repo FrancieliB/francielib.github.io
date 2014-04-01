@@ -1,0 +1,128 @@
+
+
+body{
+    
+}
+
+.example-orbit img{
+    height: 450px;
+    width:100%;
+}
+
+[data-magellan-expedition] {
+    background: #333333;
+    z-index: 50;
+    padding: 0 15px;
+}
+
+.top{
+    padding-top:45px;
+}
+
+.background-white{
+    background: #FFFFFF;
+    min-height: 570px;
+    padding-top: 45px;
+    z-index: 1;
+    position: relative;
+}
+
+.background-black{
+    min-height: 570px;
+    padding-top: 45px;
+    z-index:1;
+    position: relative;
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+    padding: 0 15px;
+    line-height: 45px;
+    color: white;
+    background: #37539D;
+}
+
+.content-box-text{
+    padding: 50px 55px;
+}
+
+.sidebar-notices{
+    border-left: 1px dashed #808080;
+    padding: 0px 50px 55px 20px;
+    margin-top: 50px;
+}
+
+.sidebar-notices h5{
+    color: #008CBA;
+}
+
+.sidebar-notices a{
+    color: #999988 !important;
+}
+
+.background{
+    background-image: url("../img/background.png");
+    background-repeat: repeat;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.person{
+    float:left;
+    width: 220px;
+}
+
+.person *{
+    text-align:center;
+}
+
+.person img{
+    border: 11px solid #333333 !important;
+    border-radius: 50%;
+    width: 220px;
+}
+
+.person img:hover{
+    border: 11px solid #B0343E !important;
+    border-radius: 50%;
+    width: 220px;
+}
+
+.social{
+    margin: auto;
+    height: 48px;
+    display: table;
+}
+
+.social a{
+    display: block;
+    height: 48px;
+    float: left;
+    width: 48px;
+}
+
+.g-plus{
+    background: url(../img/1396308484_80-google-plus.png);
+}
+
+.g-plus:hover{
+    background: url(../img/1396308484_80-google-plus-hover.png);
+}
+
+.face{
+    background: url(../img/1396313468_46-facebook.png);
+}
+
+.face:hover{
+    background: url(../img/1396313468_46-facebook-hover.png);
+}
+
+.twitter{
+    background: url(../img/1396313498_43-twitter.png);
+}
+
+.twitter:hover{
+    background: url(../img/1396313498_43-twitter-hover.png);
+}
