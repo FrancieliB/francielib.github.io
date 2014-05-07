@@ -47,16 +47,11 @@
         </div>
         
         <div data-magellan-destination="top" id="top" class="background-black">
-            <div class="large-12 hide-for-small top">
+            <div id="endStop"></div>
+            <div class="large-12 hide-for-small my-top">
                 <ul class="example-orbit" data-orbit>
                     <li>
-                        <img src="http://placehold.it/1200x500&text=Slide Image 1" height="300px" alt="slide 1" />
-                    </li>
-                    <li>
-                        <img src="http://placehold.it/1200x500&text=Slide Image 2" height="300px" alt="slide 2" />
-                    </li>
-                    <li>
-                        <img src="http://placehold.it/1200x500&text=Slide Image 3" height="300px" alt="slide 3" />
+                        <img src="img/slide-1.png" alt="slide 1" />
                     </li>
                 </ul>
             </div>
@@ -130,7 +125,12 @@
                 </ul>
             </div>
         </div>
-        <div data-magellan-destination="dac" id="dac" class="background-black">d</div>
+        <div data-magellan-destination="dac" id="dac" class="background-black">
+            <div id="firstStop"></div>
+            <div style="width: 800px; margin: 60px auto;">
+                <img src="img/img1.png" style="width: 800px;"/>
+            </div>
+        </div>
         <div data-magellan-destination="team" id="team" class="background-white team">
             <div class="people clearfix">
                 <div class="person">
@@ -151,14 +151,13 @@
                     <h5>Gabriel Hoff</h5>
                     <h5 class="subheader">Vice-presidente</h5>
                     <div class="social">
-                        <a href="" target="_blank" class="g-plus"></a>
-                        <a href="" target="_blank" class="face"></a>
-                        <a href="" target="_blank" class="twitter"></a>
+                        <a href="https://www.facebook.com/gabrielhof" target="_blank" class="face"></a>
+                        <a href="https://twitter.com/gabriel_hof" target="_blank" class="twitter"></a>
                     </div>
                 </div>
                 <div class="person">
                     <div class="circle">
-                        <img src="img/susi.jpg" alt="Susiéli Bugalho" data-tooltip class="has-tip" title="Não vive sem café e pizza." />
+                        <img src="img/susi.jpg" alt="Susiéli Bugalho" data-tooltip class="has-tip" title="Não vive sem música, café e pizza." />
                     </div>
                     <h5>Susiéli Bugalho</h5>
                     <h5 class="subheader">1ª Secretária</h5>
@@ -250,16 +249,29 @@
             <div class="content-box-text left sidebar large-6">
                 <h1>Contato </h1>
                 <p>Somente se for para dúvidas e sugestões, pois hoje não estamos recebendo reclamações... ( <span class="color-blue">brinks =)</span> )</p>
+                
                 <div class="img-git-suporte"> 
                     <img src="img/supportcat2.png" />
                 </div>
             </div>
         </div>
     
+        <div id="joyrideDiv">
+            <ol class="joyride-list" data-joyride>
+                <li data-id="firstStop" data-text="Já conheço!" data-options="tip_location: bottom">
+                    <p>Ainda não conhece o DAC??</p>
+                    </li>
+                <li data-id="endStop" data-text="Ok" data-options="tip_location: bottom">
+                    <p>Desculpe, confundi com um calouro =)</p>
+                </li>
+            </ol>
+        </div>
         <script src="js/vendor/jquery.js"></script>
         <script src="js/foundation.min.js"></script>
+        <script src="js/foundation/foundation.joyride.js"></script>
         <script src="js/foundation/foundation.magellan.js"></script>
         <script src="js/foundation/foundation.equalizer.js"></script>
+        <script src="js/vendor/jquery.cookie.js"></script>
         <script src="js/skrollr.min.js"></script>
         <script>
             $(document).foundation({
@@ -271,6 +283,8 @@
                     navigation_arrows: true
                 }
             });
+            
+            $("#joyrideDiv").foundation('joyride', 'start');
             
             var s = skrollr.init({
                 edgeStrategy: 'set',

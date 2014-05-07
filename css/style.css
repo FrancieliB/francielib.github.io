@@ -6,7 +6,7 @@ body{
 
 .example-orbit img{
     height: 450px;
-    width:100%;
+    margin: auto;
 }
 
 [data-magellan-expedition] {
@@ -15,7 +15,7 @@ body{
     padding: 0 15px;
 }
 
-.top{
+.my-top{
     padding-top:45px;
 }
 
