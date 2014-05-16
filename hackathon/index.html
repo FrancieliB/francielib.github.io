@@ -4,9 +4,231 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hackathon</title>
-
+    <link rel="stylesheet" href="../css/foundation.css" />
+    <link rel="stylesheet" href="../css/fixed-positioning.css" />
+    <link rel="stylesheet" href="../css/style-hackathon.css" />
 </head>
     <body>
-        Hello World!
+        
+        <!--div id="background" class="background skrollable skrollable-between clearfix" style="background-position: 0px 45px;"></div-->
+        
+        <div class="large-12 clearfix field">
+            <div class="aling-center logo small-12">
+                <img src="../img/logo-hackathon.PNG" alt="Hackathon Feevale" />
+            </div>
+            <div class="sections aling-center large-6 medium-6 small-12">
+                <div class="section large-4 medium-4 small-4">
+                    <a href="#inscricoes">
+                        <img src="../img/inscricoes-icon.png" data-tooltip class="has-tip tip-top radius round" title="Inscrições" />
+                    </a>
+                </div>
+                <div class="section large-4 medium-4 small-4">
+                    <a href="#regulamento">
+                        <img src="../img/regulamento-icon.png" data-tooltip class="has-tip tip-top radius round" title="Regulamento" />
+                    </a>
+                </div>
+                <div class="section large-4 medium-4 small-4">
+                    <a href="#cronograma">
+                        <img src="../img/cronograma-icon.png" data-tooltip class="has-tip tip-top radius round" title="Cronograma" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="inscricoes" class="large-12 clearfix field yellow">
+            <form class="large-6 medium-8 small-11 aling-center">
+                <fieldset>
+                    <legend>PESSOAL</legend>
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <label>
+                                <input type="text" placeholder="Nome" />
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="large-6 medium-6 small-12 columns">
+                            <label>
+                                <input type="text" placeholder="CPF" />
+                            </label>
+                        </div>
+                        <div class="large-6 medium-6 small-12 columns">
+                            <label>
+                                <input type="text" placeholder="Nascimento" />
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="large-6 medium-6 small-12 columns">
+                            <label>
+                                <input type="text" placeholder="RG" />
+                            </label>
+                        </div>
+                        <div class="large-6 medium-6 small-12 columns">
+                            <label>
+                                <input type="text" placeholder="Matricula" />
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="large-12 small-12 columns">
+                            <label>
+                                <select>
+                                    <option value="husker">Curso</option>
+                                    <option value="husker">Ciências da Computação</option>
+                                    <option value="starbuck">Design</option>
+                                    <option value="hotdog">Licenciatura em Computação</option>
+                                    <option value="apollo">Sistemas de Informação</option>
+                                    <option value="apollo">Sistemas para Internet</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>CONTATO</legend>
+                    <div class="row">
+                        <div class="large-12 small-12 columns">
+                            <label>
+                                <input type="email" placeholder="Email" />
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="large-4 medium-4 small-12 columns">
+                            <label>
+                                <input type="tel" placeholder="Telefone" />
+                            </label>
+                        </div>
+                        <div class="large-8 medium-8 small-12 columns">
+                            <label>
+                                <input type="text" placeholder="Facebook" />
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>EVENTO</legend>
+                    <div class="row">
+                        <div class="large-12 small-12 columns">
+                            <input id="checkbox1" type="checkbox">
+                            <label for="checkbox1">Precisa de transporte? (Transporte somente de ida, Feevale - Blend)</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="large-12 small-12 columns">
+                            <input id="checkbox2" type="checkbox">
+                            <label for="checkbox2">Consegue levar notebook? (Infelizmente o local não disponibiliza computadores)</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="large-12 small-12 columns">
+                            <label>Vamos ter pizza, por favor informe sua preferencia =)</label>
+                            <label>(se tu for uma pessoa fresca e quiser levar outra coisa, lá tem micro-ondas)</label>
+                            
+                            <br />
+                            
+                            <input id="checkbox3" type="checkbox">
+                            <label for="checkbox3">Mussarela</label>
+                            
+                            <input id="checkbox4" type="checkbox">
+                            <label for="checkbox4">Calabresa</label>
+                            
+                            <input id="checkbox5" type="checkbox">
+                            <label for="checkbox5">Atum</label>
+                            
+                            <input id="checkbox6" type="checkbox">
+                            <label for="checkbox6">Brócolis</label>
+                            
+                            <input id="checkbox7" type="checkbox">
+                            <label for="checkbox7">Frango com Catupiry</label>
+                        </div>
+                    </div>
+                </fieldset>
+                
+                <a href="#" data-reveal-id="confirm" class="button right">Terminar Inscrição</a>
+                
+            </form>
+        </div>
+        <div id="regulamento" class="large-12 clearfix field green">
+            <div class="large-8 medium-10 small-11 aling-center">
+                <h2>REGULAMENTO</h2>
+                
+                <ol>
+                    <div class="large-5 medium-5 left">
+                        <li>O evento ocorrerá na Blend Coworking, das 21:30 às 07:00. A participação é restrita a alunos da Universidade Feevale, devidamente matriculados nos seguintes cursos de graduação
+                            <ul>
+                                <li>Ciências da Computação</li>
+                                <li>Design</li>
+                                <li>Licenciatura em Computação</li>
+                                <li>Sistemas de Informação</li>
+                                <li>Sistemas para Internet</li>
+                            </ul>
+                        </li>
+                        <li>O evento contará com 30 vagas, sendo 10 para designers e 20 para programadores.</li>
+                        <li>A inscrição deverá ser efetuada através do site http://hackathon.dac-feevale.com.br, a inscrição só será confirmada após o pagamento do boleto.</li>
+                        <li>Não efetuaremos a restituição do valor pago em caso de desistência.</li>
+                    </div>
+                    <div class="large-5 medium-5 right">
+                    <li>O certificado de participação será enviado por email após o evento. Só receberá o certificado o inscrito que estiver presente no evento.</li>
+                    <li>É obrigatória a apresentação da carteirinha da Feevale, e documento de identidade (RG, carteira de motorista ou carteira de trabalho).</li>
+                    <li>O valor de R$ 30,00 reais inclui: 
+                        <ul>
+                            <li>Lanche = Pizza + Refrigerante</li>
+                            <li>Café &lt;3 </li>
+                            <li>Entrada no evento + Transporte = Feevale -> Blend</li>
+                        </ul>
+                        O consumo de bebidas do local não está incluso.
+                    </li>
+                    <li>Forneceremos apenas o transporte de ida, é necessário confirmar o transporte durante a inscrição, pois solicitaremos um transporte de acordo como o numero de requisições.</li>
+                    </div>
+                </ol>
+            </div>
+        </div>
+        <div id="cronograma" class="large-12 clearfix field yellow">
+            <div class="large-8 medium-10 small-11 aling-center">
+                <h2>CRONOGRAMA</h2>
+                
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="confirm" class="reveal-modal" data-reveal>
+            <h2>Quase acabando!</h2>
+            <p class="lead">Enviaremos o boleto no valor de R$ 30,00 para o seu email. Para sua inscrição ser confirmada o pagamento do boleto  deverá ser efetuado, e o recibo enviado para financeiro@dac-feevale.com.br</p>
+            <p><a href="#" class="button right">Cancelar Inscrição</a> <a href="#" class="button right">Gerar boleto</a></p>
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        
+        <script src="../js/vendor/jquery.js"></script>
+        <script src="../js/foundation.min.js"></script>
+        <script src="../js/foundation/foundation.magellan.js"></script>
+        <script src="../js/vendor/modernizr.js"></script>
+        <script src="../js/skrollr.min.js"></script>
+        <script>
+            
+            $(".field").css("min-height", $( window ).height());
+            
+            $(document).foundation();
+            
+            $(".sections").find("a").click(function(e) {
+                e.preventDefault();
+                var section = $(this).attr("href");
+                $("html, body").animate({
+                    scrollTop: $(section).offset().top
+                });
+            });
+            
+            var s = skrollr.init({
+                    edgeStrategy: 'set',
+                    easing: {
+                        WTF: Math.random,
+                        inverted: function (p) {
+                            return 1 - p;
+                        }
+                    }
+                });
+        </script>
     </body>
 </html>

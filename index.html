@@ -215,7 +215,7 @@
                 </div>
             </div>
         </div>
-        <div data-magellan-destination="contact" id="contact" class="background-black">
+        <div data-magellan-destination="contact" id="contact" class="background-black contact">
             <div class="content-box-text left large-6 columns">
                 <form>
                     <div class="row">
@@ -283,6 +283,8 @@
                     navigation_arrows: true
                 }
             });
+            
+            $(".contact").css("min-height", $( window ).height());
             
             $("#joyrideDiv").foundation('joyride', 'start');
             
