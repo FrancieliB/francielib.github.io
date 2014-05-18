@@ -5,12 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hackathon</title>
     <link rel="stylesheet" href="../css/foundation.css" />
-    <link rel="stylesheet" href="../css/fixed-positioning.css" />
     <link rel="stylesheet" href="../css/style-hackathon.css" />
 </head>
     <body>
-        
-        <!--div id="background" class="background skrollable skrollable-between clearfix" style="background-position: 0px 45px;"></div-->
         
         <div class="large-12 clearfix field">
             <div class="aling-center logo small-12">
@@ -214,7 +211,6 @@
         <script src="../js/foundation/foundation.magellan.js"></script>
         <script src="../js/foundation/foundation.magellan.js"></script>
         <script src="../js/vendor/modernizr.js"></script>
-        <script src="../js/skrollr.min.js"></script>
         <script>
             
             $(".field").css("min-height", $( window ).height());
@@ -228,16 +224,6 @@
                     scrollTop: $(section).offset().top
                 });
             });
-            
-            var s = skrollr.init({
-                    edgeStrategy: 'set',
-                    easing: {
-                        WTF: Math.random,
-                        inverted: function (p) {
-                            return 1 - p;
-                        }
-                    }
-                });
         </script>
     </body>
 </html>
