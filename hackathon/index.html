@@ -15,9 +15,9 @@
             </div>
             <div class="sections aling-center large-6 medium-6 small-12">
                 <div class="section large-4 medium-4 small-4">
-                    <a href="#inscricoes">
-                        <img src="../img/inscricoes-icon.png" data-tooltip data-options="disable_for_touch:true" class="has-tip tip-top radius round" title="Inscrições" />
-                    </a> 
+                    <a href="#cronograma">
+                        <img src="../img/cronograma-icon.png" data-tooltip data-options="disable_for_touch:true" class="has-tip tip-top radius round" title="Evento / Cronograma" />
+                    </a>
                 </div>
                 <div class="section large-4 medium-4 small-4">
                     <a href="#regulamento">
@@ -25,13 +25,100 @@
                     </a>
                 </div>
                 <div class="section large-4 medium-4 small-4">
-                    <a href="#cronograma">
-                        <img src="../img/cronograma-icon.png" data-tooltip data-options="disable_for_touch:true" class="has-tip tip-top radius round" title="Cronograma" />
-                    </a>
+                    <a href="#inscricoes">
+                        <img src="../img/inscricoes-icon.png" data-tooltip data-options="disable_for_touch:true" class="has-tip tip-top radius round" title="Inscrições" />
+                    </a> 
+                </div>  
+            </div>
+        </div>
+        
+        <!-- Cronograma -->
+        <div class="contain-to-grid sticky hide-for-small-only">
+            <nav class="top-bar" data-topbar>
+                <section class="top-bar-section" data-magellan-expedition="">
+                    <ul class="right">
+                        <li data-magellan-arrival="cronograma">
+                            <a href="#cronograma">Evento / Cronograma</a>
+                        </li>
+                        <li data-magellan-arrival="regulamento">
+                            <a href="#regulamento">Regulamento</a>
+                        </li>
+                        <li data-magellan-arrival="inscricoes">
+                            <a href="#inscricoes">Inscrições</a>
+                        </li>
+                    </ul>
+                </section>
+            </nav>
+        </div>
+        <div id="cronograma" class="large-12 clearfix field yellow">
+            <div class="aling-center large-8 medium-10 small-11">
+                <div class="large-6 medium-6 small-11 left">
+                    <h2 class="title-green">UM TILUTO CHAMATIVO</h2>
+                    
+                    <p>Um texto legal sobre o evento.</p>
+                </div>
+                <div class="large-3 medium-3 small-11 right">
+                    <h3>CRONOGRAMA</h3>
+                    
+                    <ul>
+                        <li>21:00 - Encontro na Feevale</li>
+                        <li>21:30 - Saída da Feevale</li>
+                        <li>22:00 - Inicio do evento - Apresentação da metodologia</li>
+                        <li>21:40 - Apresentação Problema/Projeto</li>
+                        <li>23:35 - Inicio desenvolvimento</li>
+                        <li>01:00 - Long Break - Pizza =)</li>
+                        <li>02:00 - Retorna desenvolvimento (Possivel realizar paradas para lanche)</li>
+                        <li>06:20 - Retrospectiva </li>
+                        <li>07:00 - Termino evento</li>
+                    </ul>
                 </div>
             </div>
         </div>
+        
+        <!-- Regulamento -->
+        
+        <div id="regulamento" class="large-12 clearfix field green">
+            <div class="large-8 medium-10 small-11 aling-center">
+                <h2>REGULAMENTO</h2>
+                
+                <ol>
+                    <div class="large-5 medium-5 left">
+                        <li>O evento ocorrerá na Blend Coworking, das 21:30 às 07:00. A participação é restrita a alunos da Universidade Feevale, devidamente matriculados nos seguintes cursos de graduação
+                            <ul>
+                                <li>Ciências da Computação</li>
+                                <li>Design</li>
+                                <li>Licenciatura em Computação</li>
+                                <li>Sistemas de Informação</li>
+                                <li>Sistemas para Internet</li>
+                            </ul>
+                        </li>
+                        <li>O evento contará com 30 vagas, sendo 10 para designers e 20 para programadores.</li>
+                        <li>A inscrição deverá ser efetuada através do site http://hackathon.dac-feevale.com.br, a inscrição só será confirmada após o pagamento do boleto.</li>
+                        <li>Não efetuaremos a restituição do valor pago em caso de desistência.</li>
+                    </div>
+                    <div class="large-5 medium-5 right">
+                    <li>O certificado de participação será enviado por email após o evento. Só receberá o certificado o inscrito que estiver presente no evento.</li>
+                    <li>É obrigatória a apresentação da carteirinha da Feevale, e documento de identidade (RG, carteira de motorista ou carteira de trabalho).</li>
+                    <li>O valor de R$ 30,00 reais inclui: 
+                        <ul>
+                            <li>Lanche = Pizza + Refrigerante</li>
+                            <li>Café &lt;3 </li>
+                            <li>Entrada no evento + Transporte = Feevale -> Blend</li>
+                        </ul>
+                        O consumo de bebidas do local não está incluso.
+                    </li>
+                    <li>Forneceremos apenas o transporte de ida, é necessário confirmar o transporte durante a inscrição, pois solicitaremos um transporte de acordo como o numero de requisições.</li>
+                    </div>
+                </ol>
+            </div>
+        </div>
+        
+        <!-- Inscrições -->
+        
         <div id="inscricoes" class="large-12 clearfix field yellow">
+            
+            <h2 class="title-green aling-center large-6 medium-8 small-11">Inscreva-se!</h2>
+            
             <form class="large-6 medium-8 small-11 aling-center">
                 <fieldset>
                     <legend>PESSOAL</legend>
@@ -147,58 +234,18 @@
                 
             </form>
         </div>
-        <div id="regulamento" class="large-12 clearfix field green">
-            <div class="large-8 medium-10 small-11 aling-center">
-                <h2>REGULAMENTO</h2>
-                
-                <ol>
-                    <div class="large-5 medium-5 left">
-                        <li>O evento ocorrerá na Blend Coworking, das 21:30 às 07:00. A participação é restrita a alunos da Universidade Feevale, devidamente matriculados nos seguintes cursos de graduação
-                            <ul>
-                                <li>Ciências da Computação</li>
-                                <li>Design</li>
-                                <li>Licenciatura em Computação</li>
-                                <li>Sistemas de Informação</li>
-                                <li>Sistemas para Internet</li>
-                            </ul>
-                        </li>
-                        <li>O evento contará com 30 vagas, sendo 10 para designers e 20 para programadores.</li>
-                        <li>A inscrição deverá ser efetuada através do site http://hackathon.dac-feevale.com.br, a inscrição só será confirmada após o pagamento do boleto.</li>
-                        <li>Não efetuaremos a restituição do valor pago em caso de desistência.</li>
-                    </div>
-                    <div class="large-5 medium-5 right">
-                    <li>O certificado de participação será enviado por email após o evento. Só receberá o certificado o inscrito que estiver presente no evento.</li>
-                    <li>É obrigatória a apresentação da carteirinha da Feevale, e documento de identidade (RG, carteira de motorista ou carteira de trabalho).</li>
-                    <li>O valor de R$ 30,00 reais inclui: 
-                        <ul>
-                            <li>Lanche = Pizza + Refrigerante</li>
-                            <li>Café &lt;3 </li>
-                            <li>Entrada no evento + Transporte = Feevale -> Blend</li>
-                        </ul>
-                        O consumo de bebidas do local não está incluso.
-                    </li>
-                    <li>Forneceremos apenas o transporte de ida, é necessário confirmar o transporte durante a inscrição, pois solicitaremos um transporte de acordo como o numero de requisições.</li>
-                    </div>
-                </ol>
-            </div>
+        
+        <!-- Logos -->
+        
+        <div class="large-1 right">
+            
         </div>
-        <div id="cronograma" class="large-12 clearfix field yellow">
-            <div class="large-8 medium-10 small-11 aling-center">
-                <h2>CRONOGRAMA</h2>
-                
-                <ul>
-                    <li>21:00 - Encontro na Feevale</li>
-                    <li>21:30 - Saída da Feevale</li>
-                    <li>22:00 - Inicio do evento - Apresentação da metodologia</li>
-                    <li>21:40 - Apresentação Problema/Projeto</li>
-                    <li>23:35 - Inicio desenvolvimento</li>
-                    <li>01:00 - Long Break - Pizza =)</li>
-                    <li>02:00 - Retorna desenvolvimento (Possivel realizar paradas para lanche)</li>
-                    <li>06:20 - Retrospectiva </li>
-                    <li>07:00 - Termino evento</li>
-                </ul>
-            </div>
-        </div>
+        
+        <!-- footer -->
+        
+        <footer>
+            Hackathon Feevale 2014 - Organização DA's da Computação e Design
+        </footer>
         
         <div id="confirm" class="reveal-modal" data-reveal>
             <h2>Quase acabando!</h2>

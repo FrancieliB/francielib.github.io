@@ -47,6 +47,10 @@ select:hover{
     padding-bottom: 50px;
 }
 
+.title-green{
+    color: #00B09F;
+}
+
 .has-tip{
     border: none !important;
 }
@@ -90,8 +94,31 @@ select:hover{
     margin-right: 15px;
 }
 
+[data-magellan-expedition]{
+    padding: 0px;
+}
 
+.contain-to-grid, .top-bar, .top-bar-section a{
+    background: #FFFFFF !important;
+    color: #585858 !important;
+}
 
+.top-bar-section a:hover{
+    background:#585858 !important;
+    color: #FFFFFF !important;
+}
 
+.border-dashed{
+    border-left: 1px dashed #00B09F;
+    padding-left: 20px;
+}
+
+footer{
+    background: none repeat scroll 0 0 #585858;
+    color: #FFFFFF;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+}
 
 
