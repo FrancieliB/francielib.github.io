@@ -121,4 +121,8 @@ footer{
     text-align: center;
 }
 
+.link-disable img{
+    cursor: default !important;
+    opacity: 0.5;
+}
 
