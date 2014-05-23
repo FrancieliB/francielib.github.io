@@ -37,14 +37,19 @@ select:hover{
 
 .yellow{
     background-color: #FFCA04;
+}
+
+.field-padding{
     padding-top: 80px;
-    padding-bottom: 50px;
+    padding-bottom: 50px;  
 }
 
 .green{
     background-color: #00B09F;
-    padding-top: 80px;
-    padding-bottom: 50px;
+}
+
+.white{
+    background-color: #FFFFFF;
 }
 
 .title-green{
@@ -56,7 +61,8 @@ select:hover{
 }
 
 .logo{
-    margin-top: 40px !important;
+    margin-top: 60px !important;
+    margin-bottom: 30px !important;
 }
 
 .aling-center{
@@ -98,14 +104,26 @@ select:hover{
     padding: 0px;
 }
 
-.contain-to-grid, .top-bar, .top-bar-section a{
-    background: #FFFFFF !important;
-    color: #585858 !important;
+.contain-to-grid, .top-bar, .top-bar-section a, .top-bar-section{
+    background: #585858 !important;
+    color: #FFFFFF !important;
 }
 
 .top-bar-section a:hover{
-    background:#585858 !important;
-    color: #FFFFFF !important;
+    background:#FFFFFF !important;
+    color: #585858 !important;
+}
+
+.top-bar {
+    text-align:center;
+}
+.top-bar-section {
+    display: inline-block;
+    height: 45px;
+}
+
+.top-bar-section ul{
+    display: inline-table;
 }
 
 .border-dashed{
@@ -126,3 +144,33 @@ footer{
     opacity: 0.5;
 }
 
+.text-top{
+    color: #B5B5B5;
+    line-height: 24px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    display:table;
+    position: relative;
+}
+
+.text-top p{
+    *position: absolute;
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+.text-top span {
+    font-size: 18px;
+    display:block;
+    *position: relative;
+}
+
+.clear{
+    clear: both;
+}
+
+@media only screen and (max-width: 40em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+    .text-top span{
+        font-size: 12px;
+    }
+} 

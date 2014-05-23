@@ -9,11 +9,42 @@
 </head>
     <body>
         
-        <div class="large-12 clearfix field">
-            <div class="aling-center logo large-3 medium-6 small-9">
-                <img src="../img/logo-hackathon.png" alt="Hackathon Feevale" />
+        <div class="large-12 field yellow">
+            <div class="white clearfix large-12">
+                <div class="aling-center large-5 medium-8 small-11">
+                    <div class="left logo large-6 medium-6 small-6">
+                        <img src="../img/logo-hackathon.png" alt="Hackathon Feevale" />
+                    </div>
+                    <div class="right large-4 medium-4 small-4 text-top">
+                        <p>
+                            <span>6 de junho</span>
+                            <span>a partir das 21h</span>
+                            <span>na Blend Coworking</span>
+                            <span>Novo Hamburgo/RS</span>
+                        </p>
+                        
+                    </div>
+                </div>        
             </div>
-            <div class="sections aling-center large-6 medium-6 small-12">
+            <div class="clear"></div>
+            <div class="contain-to-grid sticky hide-for-small-only">
+                <nav class="top-bar" data-topbar>
+                    <section class="top-bar-section" data-magellan-expedition="">
+                        <ul>
+                            <li data-magellan-arrival="cronograma">
+                                <a href="#cronograma">Evento / Cronograma</a>
+                            </li>
+                            <li data-magellan-arrival="regulamento">
+                                <a href="#regulamento">Regulamento</a>
+                            </li>
+                            <li data-magellan-arrival="inscricoes">
+                                <a href="#inscricoes" >Inscrições</a>
+                            </li>
+                        </ul>
+                    </section>
+                </nav>
+            </div>
+            <!--div class="sections aling-center large-6 medium-6 small-12">
                 <div class="section large-4 medium-4 small-4">
                     <a href="#cronograma">
                         <img src="../img/cronograma-icon.png" data-tooltip data-options="disable_for_touch:true" class="has-tip tip-top radius round" title="Evento / Cronograma" />
@@ -29,28 +60,13 @@
                         <img src="../img/inscricoes-icon.png" data-tooltip data-options="disable_for_touch:true" class="has-tip tip-top radius round" title="Inscrições" />
                     </a> 
                 </div>  
-            </div>
+            </div-->
         </div>
         
+        
         <!-- Cronograma -->
-        <div class="contain-to-grid sticky hide-for-small-only">
-            <nav class="top-bar" data-topbar>
-                <section class="top-bar-section" data-magellan-expedition="">
-                    <ul class="right">
-                        <li data-magellan-arrival="cronograma">
-                            <a href="#cronograma">Evento / Cronograma</a>
-                        </li>
-                        <li data-magellan-arrival="regulamento">
-                            <a href="#regulamento">Regulamento</a>
-                        </li>
-                        <li data-magellan-arrival="inscricoes">
-                            <a href="#inscricoes" >Inscrições</a>
-                        </li>
-                    </ul>
-                </section>
-            </nav>
-        </div>
-        <div id="cronograma" class="large-12 clearfix field yellow">
+        
+        <div id="cronograma" class="large-12 clearfix field field-padding yellow">
             <div class="aling-center large-8 medium-10 small-11">
                 <div class="large-6 medium-6 small-11 left">
                     <h2 class="title-green">UM TITULO CHAMATIVO</h2>
@@ -77,7 +93,7 @@
         
         <!-- Regulamento -->
         
-        <div id="regulamento" class="large-12 clearfix field green">
+        <div id="regulamento" class="large-12 clearfix field field-padding green">
             <div class="large-8 medium-10 small-11 aling-center">
                 <h2>REGULAMENTO</h2>
                 
@@ -115,7 +131,7 @@
         
         <!-- Inscrições -->
         
-        <div id="inscricoes" class="large-12 clearfix field yellow">
+        <div id="inscricoes" class="large-12 clearfix field field-padding yellow">
             
             <h2 class="title-green aling-center large-6 medium-8 small-11">Inscreva-se!</h2>
             
@@ -244,7 +260,7 @@
         <!-- footer -->
         
         <footer>
-            Hackathon Feevale 2014 - Organização DA's da Computação e Design
+            Hackathon Feevale 2014 - Realização DAC - Apoio DAD
         </footer>
         
         <div id="confirm" class="reveal-modal" data-reveal>
@@ -260,7 +276,10 @@
         <script src="../js/foundation/foundation.magellan.js"></script>
         <script src="../js/vendor/modernizr.js"></script>
         <script>
-            
+            $( window ).resize(function() {
+              $('.text-top').height($('.logo').height());
+            });
+                        
             $(".field").css("min-height", $( window ).height());
             
             $(document).foundation();
